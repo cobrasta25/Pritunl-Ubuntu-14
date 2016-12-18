@@ -61,6 +61,5 @@ http://telegram.me/pirated123
 ___________________________________________________
 
 Jika script mempunyai masalah sila buat "New Issues"
-Akan balas dalam masa 24jam
-
+Akan balas dalam masa 24jamKee
 More command will added
