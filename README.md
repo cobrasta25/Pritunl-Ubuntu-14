@@ -18,7 +18,7 @@ _________________________________________________
 
 Debian 8
 ```
-https://raw.githubusercontent.com/cobrasta25/Pritunl-Ubuntu-14/master/debian8.sh
+wget https://raw.githubusercontent.com/cobrasta25/Pritunl-Ubuntu-14/master/debian8.sh
 chmod +x debian8.sh
 ./debian8.sh
 ```
