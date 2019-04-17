@@ -18,9 +18,9 @@ _________________________________________________
 
 Debian 8
 ```
-wget https://raw.githubusercontent.com/cobrasta25/Pritunl-Ubuntu-14/master/debian8.sh
-chmod +x debian8.sh
-./debian8.sh
+wget https://raw.githubusercontent.com/cobrasta25/Pritunl-Ubuntu-14/master/debian9.sh
+chmod +x debian9.sh
+./debian9.sh
 ```
 Ubuntu 14.xx
 ```
