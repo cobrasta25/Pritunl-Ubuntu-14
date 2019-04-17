@@ -44,24 +44,24 @@ sudo yes | ufw enable
 ln -fs /usr/share/zoneinfo/Asia/Kuala_Lumpur /etc/localtime
 
 # Install Web Server
-apt-get -y install nginx php5-fpm php5-cli
-cd
-rm /etc/nginx/sites-enabled/default
-rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/cobrasta25/Pritunl-Ubuntu-14/master/conf/nginx.conf"
-mkdir -p /home/vps/public_html
-echo "<pre>Setup by kopetz </pre>" > /home/vps/public_html/index.html
-echo "<?php phpinfo(); ?>" > /home/vps/public_html/info.php
-wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/cobrasta25/Pritunl-Ubuntu-14/master/conf/vps.conf"
-sed -i 's/listen = \/var\/run\/php5-fpm.sock/listen = 127.0.0.1:9000/g' /etc/php5/fpm/pool.d/www.conf
-service php5-fpm restart
-service nginx restart
+#apt-get -y install nginx php5-fpm php5-cli
+#cd
+#rm /etc/nginx/sites-enabled/default
+#rm /etc/nginx/sites-available/default
+#wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/cobrasta25/Pritunl-Ubuntu-14/master/conf/nginx.conf"
+#mkdir -p /home/vps/public_html
+#echo "<pre>Setup by kopetz </pre>" > /home/vps/public_html/index.html
+#echo "<?php phpinfo(); ?>" > /home/vps/public_html/info.php
+#wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/cobrasta25/Pritunl-Ubuntu-14/master/conf/vps.conf"
+#sed -i 's/listen = \/var\/run\/php5-fpm.sock/listen = 127.0.0.1:9000/g' /etc/php5/fpm/pool.d/www.conf
+#service php5-fpm restart
+#service nginx restart
 
 # Install Vnstat
-apt-get -y install vnstat
-vnstat -u -i eth0
-sudo chown -R vnstat:vnstat /var/lib/vnstat
-service vnstat restart
+#apt-get -y install vnstat
+#vnstat -u -i eth0
+#sudo chown -R vnstat:vnstat /var/lib/vnstat
+#service vnstat restart
 
 # Install Vnstat GUI
 cd /home/vps/public_html/
